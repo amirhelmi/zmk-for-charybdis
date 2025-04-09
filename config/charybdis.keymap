@@ -90,6 +90,16 @@
             bindings = <&kp ENTER>;
             key-positions = <51 52>;
         };
+
+        btone {
+            bindings = <&bt BT_SEL 0>;
+            key-positions = <13 25>;
+        };
+
+        bttwo {
+            bindings = <&bt BT_SEL 1>;
+            key-positions = <22 34>;
+        };
     };
 
     macros {
