@@ -18,7 +18,7 @@
             key-positions = <38 27>;
         };
 
-        rightclick {
+        leftclick {
             bindings = <&mkp LCLK>;
             key-positions = <49 50>;
         };
@@ -39,12 +39,12 @@
 
         alphabet {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &kp W   &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &kp C   &trans  &trans  &trans  &trans     &trans   &trans  &trans  &trans  &trans  &trans
-&trans  &kp Q   &trans  &trans  &trans  &lt 1 K    &lt 1 X  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans     &trans   &trans
-                                &trans  &trans     &trans
+&trans  &trans  &trans  &trans     &trans       &trans     &trans          &trans       &trans     &trans      &trans     &trans
+&trans  &kp W   &kp L   &kp Y      &kp P        &kp B      &kp Z           &kp F        &kp O      &kp U       &kp SQT    &trans
+&trans  &kp C   &kp R   &lt 2 S    &kp T        &kp G      &kp M           &kp N        &kp E      &kp I       &kp A      &trans
+&trans  &kp Q   &kp J   &kp V      &kp D        &lt 1 K    &lt 1 X         &kp H        &kp COMMA  &kp PERIOD  &kp SLASH  &trans
+                        &kp ENTER  &lt 1 SPACE  &kp TAB    &sk LEFT_SHIFT  &key_repeat
+                                   &trans       &trans     &trans
             >;
         };
 
