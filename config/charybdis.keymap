@@ -5,6 +5,11 @@
 
 &sk { quick-release; };
 
+&mt {
+    require-prior-idle-ms = <125>;
+    flavor = "tap-unless-interrupted";
+};
+
 / {
     ZMK_MACRO(
 
