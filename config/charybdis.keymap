@@ -159,6 +159,26 @@
             bindings = <&altzero>;
             key-positions = <14 15>;
         };
+
+        closetab {
+            bindings = <&kp LC(W)>;
+            key-positions = <38 39>;
+        };
+
+        redoo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <14 15 16>;
+        };
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <40 39>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <49 48>;
+        };
     };
 
     macros {
@@ -261,17 +281,29 @@
         };
     };
 
+    behaviors {
+        switcherclick: switcherclick {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SWITCHERCLICK";
+            bindings = <&mo>, <&leftclick>;
+
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <150>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         alphabet {
             bindings = <
-&trans  &trans  &trans  &trans      &trans       &trans       &trans          &trans       &trans     &trans      &trans     &trans
-&trans  &kp W   &kp L   &kp Y       &kp P        &kp B        &kp Z           &kp F        &kp O      &kp U       &kp SQT    &trans
-&trans  &kp C   &kp R   &lt 2 S     &kp T        &kp G        &kp M           &kp N        &kp E      &kp I       &kp A      &trans
-&trans  &kp Q   &kp J   &kp V       &kp D        &lt 1 K      &lt 1 X         &kp H        &kp COMMA  &kp PERIOD  &kp SLASH  &trans
-                        &leftclick  &lt 1 SPACE  &lt 3 TAB    &sk LEFT_SHIFT  &key_repeat
-                                    &trans       &trans       &trans
+&trans  &trans  &trans  &trans              &trans       &trans     &trans          &trans       &trans     &trans      &trans     &trans
+&trans  &kp W   &kp L   &kp Y               &kp P        &kp B      &kp Z           &kp F        &kp O      &kp U       &kp SQT    &trans
+&trans  &kp C   &kp R   &lt 2 S             &kp T        &kp G      &kp M           &kp N        &kp E      &kp I       &kp A      &trans
+&trans  &kp Q   &kp J   &kp V               &kp D        &lt 1 K    &lt 1 X         &kp H        &kp COMMA  &kp PERIOD  &kp SLASH  &trans
+                        &switcherclick 3 0  &lt 1 SPACE  &kp TAB    &sk LEFT_SHIFT  &key_repeat
+                                            &trans       &trans     &trans
             >;
 
             trackball-bindings = <&tmv_coarse>;
