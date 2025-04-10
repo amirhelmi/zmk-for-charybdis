@@ -112,12 +112,12 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <52 43>;
+            key-positions = <52 31>;
         };
 
         semicolon {
             bindings = <&kp SEMI>;
-            key-positions = <31 52>;
+            key-positions = <52 46>;
         };
 
         underscore {
@@ -183,6 +183,11 @@
         f9 {
             bindings = <&kp F9>;
             key-positions = <49 48>;
+        };
+
+        value {
+            bindings = <&value>;
+            key-positions = <21 33>;
         };
     };
 
