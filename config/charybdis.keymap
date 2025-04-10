@@ -73,12 +73,12 @@
 
         stickyalt {
             bindings = <&sk LEFT_ALT>;
-            key-positions = <14 26>;
+            key-positions = <16 28>;
         };
 
-        stickyshift {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <16 28>;
+        ctrlbackspace {
+            bindings = <&kp LC(LCTRL)>;
+            key-positions = <31 32 33>;
         };
 
         enter {
@@ -94,6 +94,46 @@
         bttwo {
             bindings = <&kp ENTER>;
             key-positions = <22 34>;
+        };
+
+        rightnter {
+            bindings = <&kp ENTER>;
+            key-positions = <49 50>;
+        };
+
+        parenthesisleft {
+            bindings = <&mt LEFT_BRACE LEFT_PARENTHESIS>;
+            key-positions = <49 26>;
+        };
+
+        parenthesisright {
+            bindings = <&mt RIGHT_BRACKET RIGHT_PARENTHESIS>;
+            key-positions = <52 33>;
+        };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <52 43>;
+        };
+
+        semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <31 52>;
+        };
+
+        underscore {
+            bindings = <&kp UNDER>;
+            key-positions = <43 45>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <43 44>;
+        };
+
+        at {
+            bindings = <&kp AT>;
+            key-positions = <45 32>;
         };
     };
 
@@ -232,6 +272,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp PAGE_DOWN  &trans        &kp PAGE_UP  &trans   &trans
                         &trans  &trans  &trans    &trans    &trans
                                 &trans  &trans    &trans
+            >;
+        };
+
+        switchapp {
+            bindings = <
+&trans  &trans  &trans            &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans            &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans            &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LG(NUMBER_1)  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &trans  &trans  &trans    &trans  &trans
+                                          &trans  &trans    &trans
             >;
         };
     };
