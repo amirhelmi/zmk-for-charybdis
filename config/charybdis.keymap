@@ -312,12 +312,12 @@
 
         alphabet {
             bindings = <
-&trans  &trans  &trans  &trans   &trans       &trans       &trans          &trans       &trans     &trans      &trans     &trans
-&trans  &kp W   &kp L   &kp Y    &kp P        &kp B        &kp Z           &kp F        &kp O      &kp U       &kp SQT    &trans
-&trans  &kp C   &kp R   &lt 2 S  &kp T        &kp G        &kp M           &kp N        &kp E      &kp I       &kp A      &trans
-&trans  &kp Q   &kp J   &kp V    &kp D        &lt 1 K      &lt 1 X         &kp H        &kp COMMA  &kp PERIOD  &kp SLASH  &trans
-                        &kp F8   &lt 1 SPACE  &lt 3 TAB    &sk LEFT_SHIFT  &key_repeat
-                                 &trans       &trans       &trans
+&trans  &trans  &trans       &trans   &trans            &trans       &trans          &trans       &trans     &trans      &trans     &trans
+&trans  &kp W   &kp L        &kp Y    &kp P             &kp B        &kp Z           &kp F        &kp O      &kp U       &kp SQT    &trans
+&trans  &kp C   &mt LCTRL R  &lt 2 S  &mt LEFT_SHIFT T  &kp G        &kp M           &kp N        &kp E      &kp I       &kp A      &trans
+&trans  &kp Q   &kp J        &kp V    &kp D             &lt 1 K      &lt 1 X         &kp H        &kp COMMA  &kp PERIOD  &kp SLASH  &trans
+                             &kp F8   &lt 1 SPACE       &lt 3 TAB    &sk LEFT_SHIFT  &key_repeat
+                                      &trans            &trans       &trans
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -336,12 +336,12 @@
 
         navigation {
             bindings = <
-&trans  &trans  &trans            &trans  &trans     &trans    &trans    &trans         &trans        &trans       &trans   &trans
-&trans  &trans  &trans            &trans  &trans     &trans    &trans    &trans         &kp UP_ARROW  &trans       &trans   &trans
-&trans  &trans  &kp LEFT_CONTROL  &trans  &trans     &trans    &kp HOME  &kp LEFT       &kp DOWN      &kp RIGHT    &kp END  &trans
-&trans  &trans  &trans            &trans  &kp LC(A)  &trans    &trans    &kp PAGE_DOWN  &trans        &kp PAGE_UP  &trans   &trans
-                                  &trans  &trans     &trans    &trans    &trans
-                                          &trans     &trans    &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans    &trans         &trans        &trans       &trans   &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans    &trans         &kp UP_ARROW  &trans       &trans   &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &kp HOME  &kp LEFT       &kp DOWN      &kp RIGHT    &kp END  &trans
+&trans  &trans  &trans  &trans  &kp LC(A)  &trans    &trans    &kp PAGE_DOWN  &trans        &kp PAGE_UP  &trans   &trans
+                        &trans  &trans     &trans    &trans    &trans
+                                &trans     &trans    &trans
             >;
         };
 
