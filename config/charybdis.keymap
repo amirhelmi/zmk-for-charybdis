@@ -329,6 +329,7 @@
                         &kp F8   &lt 1 SPACE  &lt 3 TAB    &sk LEFT_SHIFT  &key_repeat
                                  &trans       &trans       &trans
             >;
+  trackball-bindings = <&tmv_coarse>;
         };
 
         number {
