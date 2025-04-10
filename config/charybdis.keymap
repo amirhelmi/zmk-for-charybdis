@@ -325,7 +325,6 @@
                                       &trans            &trans       &trans
             >;
 
-            trackball-bindings = <&tmv_coarse>;
         };
 
         number {
