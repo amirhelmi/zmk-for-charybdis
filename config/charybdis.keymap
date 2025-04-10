@@ -129,6 +129,36 @@
             bindings = <&kp AT>;
             key-positions = <45 32>;
         };
+
+        editorfocus {
+            bindings = <&kp LC(E)>;
+            key-positions = <15 28>;
+        };
+
+        windows {
+            bindings = <&sk LGUI>;
+            key-positions = <38 39 40>;
+        };
+
+        insert {
+            bindings = <&kp INSERT>;
+            key-positions = <49 37>;
+        };
+
+        calcrel {
+            bindings = <&mt LC(R) LC(D)>;
+            key-positions = <15 26>;
+        };
+
+        capture {
+            bindings = <&kp LG(LS(S))>;
+            key-positions = <13 14>;
+        };
+
+        altzero {
+            bindings = <&altzero>;
+            key-positions = <14 15>;
+        };
     };
 
     macros {
@@ -250,9 +280,9 @@
         number {
             bindings = <
 &trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans        &trans       &trans        &trans  &trans
-&trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans        &trans       &trans        &trans  &trans
+&trans  &trans  &trans  &trans          &kp F3        &trans    &trans  &kp F2        &trans       &trans        &trans  &trans
 &trans  &kp N9  &kp N5  &lt 2 NUMBER_1  &kp NUMBER_3  &trans    &trans  &kp NUMBER_2  &kp N0       &kp NUMBER_4  &kp N8  &trans
-&trans  &trans  &trans  &bootloader     &kp N7        &trans    &trans  &kp NUMBER_6  &bootloader  &trans        &trans  &trans
+&trans  &kp F9  &trans  &bootloader     &kp N7        &trans    &trans  &kp NUMBER_6  &bootloader  &trans        &trans  &trans
                         &trans          &trans        &trans    &trans  &trans
                                         &trans        &trans    &trans
             >;
