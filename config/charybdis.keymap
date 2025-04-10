@@ -312,12 +312,12 @@
 
         alphabet {
             bindings = <
-&trans  &trans  &trans  &trans              &trans       &trans     &trans          &trans       &trans     &trans      &trans     &trans
-&trans  &kp W   &kp L   &kp Y               &kp P        &kp B      &kp Z           &kp F        &kp O      &kp U       &kp SQT    &trans
-&trans  &kp C   &kp R   &lt 2 S             &kp T        &kp G      &kp M           &kp N        &kp E      &kp I       &kp A      &trans
-&trans  &kp Q   &kp J   &kp V               &kp D        &lt 1 K    &lt 1 X         &kp H        &kp COMMA  &kp PERIOD  &kp SLASH  &trans
-                        &switcherclick 3 0  &lt 1 SPACE  &kp TAB    &sk LEFT_SHIFT  &key_repeat
-                                            &trans       &trans     &trans
+&trans  &trans  &trans  &trans    &trans       &trans     &trans          &trans       &trans     &trans      &trans     &trans
+&trans  &kp W   &kp L   &kp Y     &kp P        &kp B      &kp Z           &kp F        &kp O      &kp U       &kp SQT    &trans
+&trans  &kp C   &kp R   &lt 2 S   &kp T        &kp G      &kp M           &kp N        &kp E      &kp I       &kp A      &trans
+&trans  &kp Q   &kp J   &kp V     &kp D        &lt 1 K    &lt 1 X         &kp H        &kp COMMA  &kp PERIOD  &kp SLASH  &trans
+                        &lt 3 F8  &lt 1 SPACE  &kp TAB    &sk LEFT_SHIFT  &key_repeat
+                                  &trans       &trans     &trans
             >;
 
             trackball-bindings = <&tmv_coarse>;
