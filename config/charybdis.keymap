@@ -71,7 +71,7 @@
         };
 
         ctrlbackspace {
-            bindings = <&kp LC(LCTRL)>;
+            bindings = <&kp LC(BACKSPACE)>;
             key-positions = <31 32 33>;
         };
 
@@ -311,12 +311,12 @@
 
         number {
             bindings = <
-&trans  &trans  &trans  &trans          &trans        &trans    &trans  &trans        &trans       &trans        &trans  &trans
-&trans  &trans  &trans  &trans          &kp F3        &trans    &trans  &kp F2        &trans       &trans        &trans  &trans
-&trans  &kp N9  &kp N5  &lt 2 NUMBER_1  &kp NUMBER_3  &trans    &trans  &kp NUMBER_2  &kp N0       &kp NUMBER_4  &kp N8  &trans
-&trans  &kp F9  &trans  &bootloader     &kp N7        &trans    &trans  &kp NUMBER_6  &bootloader  &trans        &trans  &trans
-                        &trans          &trans        &trans    &trans  &trans
-                                        &trans        &trans    &trans
+&trans  &trans  &trans      &trans          &trans        &trans    &trans  &trans        &trans       &trans        &trans  &trans
+&trans  &trans  &kp F5      &kp F11         &kp F3        &trans    &trans  &kp F12       &kp F10      &trans        &trans  &trans
+&trans  &kp N9  &kp N5      &lt 2 NUMBER_1  &kp NUMBER_3  &trans    &kp F2  &kp NUMBER_2  &kp N0       &kp NUMBER_4  &kp N8  &trans
+&trans  &kp F9  &bt BT_NXT  &bootloader     &kp N7        &trans    &kp F6  &kp NUMBER_6  &bootloader  &trans        &trans  &trans
+                            &trans          &trans        &trans    &trans  &trans
+                                            &trans        &trans    &trans
             >;
         };
 
